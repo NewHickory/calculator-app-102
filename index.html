@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <label for="result">Result:</label>
+    <p id="result"></p>
+    <label for="input">Input:</label>
+    <p id="input"></p>
+  </div>
+  <form class="calculator">
+    <!-- <label for="input">Input:</label>
+    <!-- the "onkeyup" event listener passes its input's "value" to the "saveFirstNumber" function in the main.js file -->
+    <!-- <input type="number" id="first-Number" name="first-Number" placeholder="type the first number" value="" onkeyup="saveFirstNumber(this.value)">
+    <label for="second-number">Second Number:</label>
+    <input type="number" id="second-Number" name="second-Number" placeholder="type the second number" onkeyup="saveSecondNumber(this.value)"> --> -->
+    <div>
+      <button type="reset">AC</button>
+      <button type="button" name="sign_change" id="sign_change" onclick="changeOperation(this.id)">+/-</button>
+      <button type="button" name="percentage" id="percentage" onclick="changeOperation(this.id)">%</button>
+      <button type="button" name="divide" id="division" onclick="changeOperation(this.id)">/</button>
+    </div>
+    <div>
+      <button type="button" name="7" id="7" value=7 onclick="saveInputNumber(this.value)">7</button>
+      <button type="button" name="8" id="8" value=8 onclick="saveInputNumber(this.value)">8</button>
+      <button type="button" name="8" id="8" value=9 onclick="saveInputNumber(this.value)">9</button>
+      <button type="button" name="multiply" id="multiplication" onclick="changeOperation(this.id)">x</button>
+    </div>
+    <div>
+      <button type="button" name="4" id="4" value=4 onclick="saveInputNumber(this.value)">4</button>
+      <button type="button" name="5" id="5" value=5 onclick="saveInputNumber(this.value)">5</button>
+      <button type="button" name="6" id="6" value=6 onclick="saveInputNumber(this.value)">6</button>
+      <button type="button" name="subtract" id="subtraction" onclick="changeOperation(this.id)">-</button>
+    </div>
+    <div>
+      <button type="button" name="1" id="1" value=1 onclick="saveInputNumber(this.value)">1</button>
+      <button type="button" name="2" id="2" value=2 onclick="saveInputNumber(this.value)">2</button>
+      <button type="button" name="3" id="3" value=3 onclick="saveInputNumber(this.value)">3</button>
+      <button type="button" name="add" id="addition" onclick="changeOperation(this.id)">+</button>
+    </div>
+    <div>
+      <button type="button" name="0" id="0" value=0 onclick="saveInputNumber(this.value)">0</button>
+      <button type="button" name="modulus" id="modulus" onclick="changeOperation(this.id)">mod</button>
+      <button type="button" onclick="equals()">=</button>
+    </div>
+    <div>
+      <!-- the "onclick" event listener passes its element's "id" to the "changeOperation" function in the main.js file -->
+      
+    </div>
+    <br>
+    <!-- this "onclick" calls the "equal" function in the main.js file -->
+    
+  </form>
+</body>
+</html>
