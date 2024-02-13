@@ -77,7 +77,6 @@ const changeOperation = (chosenOperation) => {
     firstNum = Number(result)
   }
   
-  if (chosenOperation === "")
   operation = chosenOperation
   // Log the value and data type of the first operand value as well as the value of the operation variable.
   console.log("firstNum: ", firstNum)
