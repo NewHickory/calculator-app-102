@@ -1,11 +1,95 @@
+* {
+  margin: 2px;
+  font-family: sans-serif;
+  font-size: large;
+  color: whitesmoke;
+}
+
+body {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 5px solid black; */
+}
+
+.calculator-container {
+  /* border: 1px solid yellow; */
+  width: 35vw;
+  height: 75vh;
+  background-color: black;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+.display-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid green; */
+  height: 20%;
+}
+
 #input {
-  border: 1px solid red;
-  height: 20px;
-  width: 200px;
+  /* border: 2px solid red; */
+  height: 20%;
+  width: 95%;
+  color: rgb(197, 195, 195);
+  background-color: rgb(60, 60, 60);
+  padding: 5px;
+  text-align: right;
 }
 
 #result {
-  border: 1px solid blue;
-  height: 20px;
-  width: 200px;
+  /* border: 2px solid blue; */
+  height: 40%;
+  width: 95%;
+  color: whitesmoke; 
+  background-color: rgb(25, 25, 25);
+  padding: 5px;
+  text-align: right;
+  font-size: xx-large;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* border: 2px solid green; */
+  height: 75%;
+  /* width: 95%; */
+}
+
+button {
+  border-radius: 5px;
+  border: none;
+}
+
+#zero, #one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #decimal, #modulus {
+  background-color: rgb(43, 42, 42);
+}
+
+#sign_change, #percentage, #modulus, #clear {
+  background-color: rgb(60, 60, 60);
+}
+
+#sign_change, #percentage {
+  color: rgb(80, 80, 80);
+}
+
+#division, #multiplication, #subtraction, #addition, #equal {
+  background-color: rgb(7, 7, 202);
+}
+
+
+@media (min-width: 1000px) {
+  .calculator-container {
+    width: 350px;
+  }
+}
+
+@media (max-width: 500px) {
+  .calculator-container {
+    width: 180px;
+  }
 }
