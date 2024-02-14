@@ -10,13 +10,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 5px solid black; */
+  border: 5px solid black;
 }
 
 .calculator-container {
   /* border: 1px solid yellow; */
-  width: 35vw;
+  width: calc(100vw - 80%);
   height: 75vh;
+  /* width: 35vw;
+  height: 75vh; */
   background-color: black;
   border-radius: 25px;
   padding: 5px;
@@ -82,14 +84,8 @@ button {
 }
 
 
-@media (min-width: 1000px) {
+@media (max-width: 800px) {
   .calculator-container {
-    width: 350px;
-  }
-}
-
-@media (max-width: 500px) {
-  .calculator-container {
-    width: 180px;
+    width: 200px;
   }
 }
